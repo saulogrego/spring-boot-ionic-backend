@@ -10,6 +10,6 @@ import com.saulogrego.cursomc.domain.Cliente;
 public interface ClienteRepository extends JpaRepository<Cliente, Integer>{
 
 	@Transactional(readOnly=true)
-	Cliente findByEmail(String email);
+	public Cliente findByEmail(String email);
 	
 }
